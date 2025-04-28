@@ -1,0 +1,114 @@
+.home-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 48px 36px 32px 36px;
+    max-width: 700px;
+    margin: 48px auto;
+    text-align: center;
+    color: #222;
+}
+
+.home-container h1 {
+    font-size: 2.1rem;
+    color: #1a237e;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.home-container p {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 32px;
+}
+
+.home-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+.home-features > div {
+    flex: 1 1 0;
+    background: #f3f5fa;
+    border-radius: 10px;
+    padding: 22px 12px 16px 12px;
+    margin: 0 4px;
+    min-width: 140px;
+    box-shadow: 0 1px 6px rgba(26,35,126,0.06);
+}
+.home-features h3 {
+    color: #1a237e;
+    margin: 12px 0 8px 0;
+    font-size: 1.08rem;
+}
+.home-features p {
+    color: #444;
+    font-size: 0.98rem;
+    margin: 0;
+}
+.home-emoji {
+    font-size: 2.1rem;
+    display: block;
+}
+
+.home-cta {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.home-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #1a237e 70%, #3949ab 100%);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 1px 6px rgba(26,35,126,0.08);
+    transition: background 0.2s, transform 0.15s;
+    margin-bottom: 8px;
+}
+.home-btn:hover, .home-btn:focus {
+    background: linear-gradient(90deg, #3949ab 70%, #1a237e 100%);
+    transform: scale(1.04);
+}
+.home-btn.secondary {
+    background: #ffd700;
+    color: #1a237e;
+    font-weight: 700;
+    margin-left: 0;
+}
+.home-btn.secondary:hover, .home-btn.secondary:focus {
+    background: #ffe066;
+    color: #1a237e;
+    transform: scale(1.04);
+}
+
+@media (max-width: 700px) {
+    .home-container {
+        padding: 24px 4vw 18px 4vw;
+        margin: 24px 0;
+    }
+    .home-features {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .home-features > div {
+        margin: 0;
+        padding: 18px 8px 12px 8px;
+    }
+    .home-cta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+}

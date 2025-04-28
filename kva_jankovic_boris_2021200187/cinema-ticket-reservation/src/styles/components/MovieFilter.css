@@ -1,0 +1,106 @@
+/* Filter toggle button */
+.filter-toggle-btn {
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 6px rgba(26,35,126,0.08);
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.5px;
+}
+.filter-toggle-btn:hover, .filter-toggle-btn:focus {
+    background: #3949ab;
+    transform: scale(1.04);
+}
+
+/* Filter form */
+.movie-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    background: #f3f5fa;
+    border-radius: 10px;
+    padding: 18px 12px 10px 12px;
+    box-shadow: 0 1px 8px rgba(26,35,126,0.06);
+    margin-bottom: 18px;
+}
+
+.movie-filter input,
+.movie-filter select {
+    padding: 8px 12px;
+    border: 1.5px solid #bbb;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    min-width: 130px;
+    background: #fff;
+    transition: border 0.2s;
+}
+.movie-filter input:focus,
+.movie-filter select:focus {
+    border: 1.5px solid #1a237e;
+    outline: none;
+}
+
+.movie-filter button[type="submit"] {
+    padding: 8px 22px;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 1px 4px rgba(26,35,126,0.08);
+    margin-left: 8px;
+}
+.movie-filter button[type="submit"]:hover,
+.movie-filter button[type="submit"]:focus {
+    background: #3949ab;
+    transform: scale(1.04);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .movie-filter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 14px 6px 8px 6px;
+    }
+    .movie-filter input,
+    .movie-filter select {
+        min-width: 100px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-toggle-btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 0;
+        margin-bottom: 12px;
+    }
+    .movie-filter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 10px 2vw 6px 2vw;
+    }
+    .movie-filter input,
+    .movie-filter select {
+        width: 90%;
+        min-width: unset;
+        font-size: 0.98rem;
+    }
+
+   
+}

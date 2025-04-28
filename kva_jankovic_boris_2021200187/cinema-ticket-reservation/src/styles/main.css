@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    /* Dodaj padding za header i bottom nav */
+    padding-top: 70px;
+    padding-bottom: 62px;
+}
+@media (max-width: 600px) {
+    body {
+        padding-top: 54px;
+        padding-bottom: 56px;
+    }
+}

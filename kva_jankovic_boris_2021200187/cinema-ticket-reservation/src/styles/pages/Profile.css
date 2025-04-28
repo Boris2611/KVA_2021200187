@@ -1,0 +1,220 @@
+.profile-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(26,35,126,0.10);
+    padding: 38px 32px 28px 32px;
+    max-width: 440px;
+    margin: 48px auto 32px auto;
+    color: #222;
+    text-align: center;
+}
+
+.profile-container h2 {
+    color: #1a237e;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.profile-info {
+    margin-top: 18px;
+    text-align: left;
+    background: #f3f5fa;
+    border-radius: 10px;
+    padding: 18px 16px 10px 16px;
+    box-shadow: 0 1px 8px rgba(26,35,126,0.06);
+}
+
+.profile-info p {
+    font-size: 1.08rem;
+    margin: 10px 0;
+}
+
+.profile-info input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: 1.5px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+.profile-info input:focus {
+    border: 1.5px solid #1a237e;
+    outline: none;
+}
+
+.profile-info label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.profile-info button {
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+}
+.profile-info button:hover {
+    background: #3949ab;
+}
+
+.profile-info .genres-list {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.profile-info .genres-list label {
+    background: #e3e6f7;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.98rem;
+    color: #1a237e;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile-info .genres-list input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+.profile-info .edit-btn {
+    margin-top: 18px;
+    background: #ffd700;
+    color: #1a237e;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.08rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+}
+.profile-info .edit-btn:hover {
+    background: #ffe066;
+}
+
+.profile-reservations {
+    margin-top: 36px;
+    text-align: left;
+}
+
+.profile-reservations h3 {
+    color: #1a237e;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.reservation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reservation-item {
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(26,35,126,0.06);
+    padding: 14px 12px 10px 12px;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.reservation-item strong {
+    color: #1a237e;
+}
+
+.reservation-item .reservation-status {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: #ffd700;
+    color: #1a237e;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 0.98rem;
+}
+
+.reservation-item button {
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 7px 16px;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.reservation-item button:last-child {
+    margin-right: 0;
+}
+.reservation-item button:hover {
+    background: #3949ab;
+}
+
+.review-form {
+    margin-top: 10px;
+    background: #e3e6f7;
+    border-radius: 8px;
+    padding: 10px 8px 8px 8px;
+}
+.review-form textarea {
+    width: 100%;
+    border-radius: 6px;
+    border: 1.5px solid #bbb;
+    font-size: 1rem;
+    padding: 6px 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+.review-form button {
+    background: #ffd700;
+    color: #1a237e;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+.review-form button:hover {
+    background: #ffe066;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 16px 2vw 10px 2vw;
+        margin: 18px 0;
+        max-width: 98vw;
+    }
+    .profile-info {
+        padding: 10px 4px 6px 4px;
+    }
+    .profile-reservations {
+        margin-top: 18px;
+    }
+    .reservation-item {
+        padding: 10px 4px 8px 4px;
+        font-size: 0.98rem;
+    }
+}

@@ -1,0 +1,112 @@
+.seat-selection {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 10px 18px 10px;
+    max-width: 650px;
+    margin: 32px auto 18px auto;
+    color: #222;
+}
+
+.seat-selection h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1.15rem;
+}
+
+.screen-label {
+    text-align: center;
+    font-weight: bold;
+    color: #1a237e;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 1.08rem;
+    background: #e3e6f7;
+    border-radius: 6px;
+    padding: 6px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 6px rgba(26,35,126,0.08);
+}
+
+.seats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.seat-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+}
+
+.row-label {
+    width: 22px;
+    text-align: right;
+    margin-right: 6px;
+    font-weight: 600;
+    color: #1a237e;
+    font-size: 1rem;
+}
+
+.seat {
+    width: 28px;
+    height: 28px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.98rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    user-select: none;
+    border: 2px solid transparent;
+}
+
+.seat.selected {
+    background: #1a237e;
+    color: #fff;
+    border: 2px solid #ffd700;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.15);
+}
+
+.seat:hover {
+    background: #bdbdbd;
+}
+
+.selected-seats {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.selected-seats h3 {
+    font-size: 1.05rem;
+    color: #1a237e;
+}
+
+@media (max-width: 700px) {
+    .seat-selection {
+        padding: 10px 2vw 10px 2vw;
+        max-width: 100vw;
+    }
+    .seat {
+        width: 22px;
+        height: 22px;
+        font-size: 0.92rem;
+    }
+    .row-label {
+        font-size: 0.92rem;
+        width: 16px;
+    }
+    .screen-label {
+        font-size: 0.98rem;
+        padding: 4px 0;
+    }
+}
