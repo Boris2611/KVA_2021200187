@@ -9,7 +9,7 @@ import Confirmation from './pages/Confirmation';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
-import Cart from './pages/Cart'; // Dodaj ovo
+import Cart from './pages/Cart';
 import './styles/main.css';
 import Checkout from './pages/Checkout';
 
